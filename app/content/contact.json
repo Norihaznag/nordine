@@ -1,0 +1,26 @@
+{
+  "en": {
+    "email": "email",
+    "name": "name",
+    "message": "message",
+    "cta": "send",
+    "successMessage": "Your message has been sent successfully!",
+    "failureMessage": "There was an error sending your message. Please try again."
+  },
+  "fr": {
+    "email": "e-mail",
+    "name": "Nom Complet",
+    "message": "message",
+    "cta": "envoyer",
+    "successMessage": "Votre message a été envoyé avec succès !",
+    "failureMessage": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer."
+  },
+  "ar": {
+    "email": "البريد الإلكتروني",
+    "name": "الإسم",
+    "message": "الرسالة",
+    "cta": "إرسال",
+    "successMessage": "تم إرسال رسالتك بنجاح!",
+    "failureMessage": "حدث خطأ أثناء إرسال رسالتك. يرجى المحاولة مرة أخرى."
+  }
+}

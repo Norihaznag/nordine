@@ -1,0 +1,20 @@
+{
+    "en": {
+      "home": "Home",
+      "projects": "Projects",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "fr": {
+      "home": "Accueil",
+      "projects": "Projets",
+      "about": "À propos",
+      "contact": "Contact"
+    },
+    "ar": {
+      "home": "الرئيسية",
+      "projects": "المشاريع",
+      "about": "حول",
+      "contact": "اتصل بنا"
+    }
+  }
