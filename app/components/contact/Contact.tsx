@@ -5,17 +5,10 @@ import {
   LoadingSpinner,
   SuccessMessage,
   FailureMessage,
-} from "@/app/components/form/FormFeedbackComponents"
+} from "@/app/components/form/FormFeedbackComponents";
 import { useParams } from "next/navigation";
-import axios from "axios";
 
 type FormState = 'idle' | 'loading' | 'success' | 'error';
-
-interface FormData {
-  email: string;
-  name: string;
-  message: string;
-}
 
 interface ContactContent {
   email: string;
@@ -32,15 +25,12 @@ const Contact: React.FC = () => {
   const { email, name, message, cta, successMessage, failureMessage } =
     contact[lang as keyof typeof contact] as ContactContent;
 
-  const [formData, setFormData] = useState<FormData>({
+  const [formData, setFormData] = useState({
     email: "",
     name: "",
     message: "",
   });
   const [formState, setFormState] = useState<FormState>("idle");
-
-  
-
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -54,11 +44,16 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setFormState("loading");
     try {
-      // Simulate API call
-      const response = await axios.post('/api/contact', formData);
-  
-      // Check if the response status is not in the 2xx range
-      if (response.status < 200 || response.status >= 300) {
+      
+      const response = await fetch('/api/contact', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (!response.ok) {
         setFormState("error");
       } else {
         setFormState("success");
@@ -69,32 +64,24 @@ const Contact: React.FC = () => {
       console.error('Error submitting form:', err);
     }
   };
-  
-
 
   return (
-    <div className="content py-5 flex flex-col gap-4 ">
+    <div className="content py-5 flex flex-col gap-4">
       {formState === 'loading' && <LoadingSpinner />}
 
-      {formState === "success" && (
-        <SuccessMessage message={successMessage} />
-      )}
+      {formState === "success" && <SuccessMessage message={successMessage} />}
       {formState === "error" && <FailureMessage message={failureMessage} />}
 
       <form
         onSubmit={handleSubmit}
-        className={`flex flex-col gap-6 w-full ${
-          lang === "ar" ? "text-right" : ""
-        }`}
+        className={`flex flex-col gap-6 w-full ${lang === "ar" ? "text-right" : ""}`}
       >
         <div className="email w-full">
           <input
             aria-label="email"
             name="email"
             type="email"
-            className={`p-4 flex  w-full bg-inherit border-2 ${
-          lang === "ar" ? "text-right" : ""
-        }`}
+            className={`p-4 w-full bg-inherit border-2 ${lang === "ar" ? "text-right" : ""}`}
             placeholder={email}
             value={formData.email}
             onChange={handleInputChange}
@@ -106,22 +93,18 @@ const Contact: React.FC = () => {
             aria-label="name"
             name="name"
             type="text"
-            className={`p-4 flex  w-full bg-inherit border-2 ${
-                lang === "ar" ? "text-right" : ""
-              }`}
+            className={`p-4 w-full bg-inherit border-2 ${lang === "ar" ? "text-right" : ""}`}
             placeholder={name}
             value={formData.name}
             onChange={handleInputChange}
             required
           />
         </div>
-        <div className="Message w-full">
+        <div className="message w-full">
           <textarea
             aria-label="message"
             name="message"
-            className={`p-4 flex  w-full bg-inherit border-2 ${
-                lang === "ar" ? "text-right" : ""
-              }`}
+            className={`p-4 w-full bg-inherit border-2 ${lang === "ar" ? "text-right" : ""}`}
             placeholder={message}
             value={formData.message}
             onChange={handleInputChange}
@@ -131,7 +114,7 @@ const Contact: React.FC = () => {
 
         <button
           type="submit"
-          className="border-2 p-4 w-fit px-4"
+          className="border-2 p-4 w-fit"
           disabled={formState === "loading"}
         >
           {formState === "loading" ? "Sending..." : cta}
