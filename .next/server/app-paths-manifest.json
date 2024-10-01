@@ -1,6 +1,6 @@
 {
   "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/[lang]/page": "app/[lang]/page.js",
-  "/[lang]/contact/page": "app/[lang]/contact/page.js"
+  "/[lang]/contact/page": "app/[lang]/contact/page.js",
+  "/[lang]/page": "app/[lang]/page.js"
 }
