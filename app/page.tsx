@@ -58,12 +58,12 @@ const Page = ({ params }: PageProps) => {
       <section className="md:bg-[url('../public/backgrounds/main.png')] bg-cover bg-no-repeat flex md:grid grid-cols-2 flex-col gap-4  min-h-[40vh]   justify-center md:p-[15%]">
         <div className="thumbnail w-full min-h-[40vh] bg-[url('../public/backgrounds/main.png')] bg-cover bg-no-repeat md:hidden"></div>
 
-        <Card className="">
+        <Card className="order-2">
           <h1 className="text-[1.5rem] font-semibold ">{home.title}</h1>
           <p>{home.description}</p>
-          <button className="p-2 border hover:shadow-inner   ">
+          <Link href={`${lang}/projects`} className=" p-2 border hover:shadow-inner  ">
             {home.cta}
-          </button>
+          </Link>
         </Card>
       </section>
 
@@ -126,9 +126,9 @@ const Page = ({ params }: PageProps) => {
 
           <h1 className="text-[1.9rem] font-semibold">{contact.title}</h1>
           <p>{contact.description}</p>
-          <button className=" p-2 border hover:shadow-inner  ">
+          <Link href={`${lang}/contact`} className=" p-2 border hover:shadow-inner  ">
             {contact.cta}
-          </button>
+          </Link>
         </Card>
       </section>
     </div>

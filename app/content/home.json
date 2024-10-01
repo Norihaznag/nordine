@@ -55,21 +55,21 @@
         {
           "name": "E-commerce Web App",
           "description": "A fully functional e-commerce site with server-side rendering (SSR) using Next.js. Integrated with Strapi for content management.",
-          "technologies": ["Next.js", "Strapi", "Tailwind CSS", "TypeScript"],
+          "technologies": ["Next.js", "Tailwind CSS", "TypeScript", "Redux"],
           "link": "/projects/ecommerce" ,
            "image" : "kilohi"
         },
         {
           "name": "Personal Blog Platform",
           "description": "A personal blog platform using Next.js static site generation (SSG). Users can read, comment, and share articles seamlessly.",
-          "technologies": ["Next.js", "Markdown", "GraphQL"],
+          "technologies": ["Next.js" , "Tailwind CSS"],
           "link": "/projects/blog",
            "image" : "summarized"
         },
         {
           "name": "Restaurant PWA",
           "description": "A progressive web app for a food delivery service with offline support and smooth user experience.",
-          "technologies": ["Next.js", "PWA", "Redux"],
+          "technologies": ["Next.js", "PWA", "Redux" , "Strapi"],
           "link": "/projects/restaurant-pwa" ,
            "image" : "porfavor"
         }
@@ -156,7 +156,7 @@
         {
           "name": "Plateforme de Blog Personnel",
           "description": "Une plateforme de blog personnel utilisant la génération de sites statiques (SSG) avec Next.js. Les utilisateurs peuvent lire, commenter et partager des articles.",
-          "technologies": ["Next.js", "Markdown", "GraphQL"],
+          "technologies": ["Next.js" , "Tailwind CSS"],
           "link": "/projects/blog",
           "image" : "summarized"
         },
@@ -250,7 +250,7 @@
         {
           "name": "منصة مدونة شخصية",
           "description": "منصة مدونات شخصية تستخدم توليد الصفحات الثابتة (SSG) باستخدام Next.js. يمكن للمستخدمين قراءة المقالات والتعليق عليها ومشاركتها.",
-          "technologies": ["Next.js", "Markdown", "GraphQL"],
+          "technologies": ["Next.js" , "Tailwind CSS"],
           "link": "/projects/blog" ,
            "image" : "summarized"
         },

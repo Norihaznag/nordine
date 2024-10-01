@@ -15,7 +15,10 @@
     "next": "14.2.13",
     "nodemailer": "^6.9.15",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "resend": "^4.0.0",
+    "sendinblue-api": "^1.0.8",
+    "sib-api-v3-typescript": "^2.2.2"
   },
   "devDependencies": {
     "@types/node": "^20",

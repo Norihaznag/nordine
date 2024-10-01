@@ -1,44 +1,34 @@
-import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+// This example is for Typescript-node
+import SibApiV3Sdk from 'sib-api-v3-typescript';
 
-export async function POST(req: NextRequest) {
-  try {
-    const { name, email, message } = await req.json();
+const apiInstance = new SibApiV3Sdk.SMTPApi()
 
-    if (!name || !email || !message) {
-      return NextResponse.json(
-        { message: "Please fill in all required fields" },
-        { status: 400 }
-      );
-    }
+const apiKey = apiInstance.authentications['apiKey'];
+apiKey.apiKey = process.env.SENDINBLUE_API_KEY
 
-    const transporter = nodemailer.createTransport({
-      host: process.env.EMAIL_HOST, // Replace with your SMTP server host
-      port: parseInt(process.env.EMAIL_PORT || "587"), // Replace with your SMTP server port
-      // secure: process.env.EMAIL_SECURE === 'true', // Adjust based on your SMTP server configuration
-      auth: {
-        user: process.env.EMAIL_USER, // Replace with your email address
-        pass: process.env.EMAIL_PASSWORD, // Replace with your email password
-      },
-    });
+// Configure API key authorization: partner-key
 
-    const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: "nordin0aznag@hotmail.fr", // Replace with your recipient email
-      subject: `Contact Form Submission from ${name}`,
-      text: `
-          Name: ${name}
-          Email: ${email}
-          Message: ${message}
-        `,
-    };
+const partnerKey = apiInstance.authentications['partnerKey'];
+partnerKey.apiKey = "YOUR API KEY"
 
-    await transporter.sendMail(mailOptions);
-    console.log(process.env.EMAIL_USER)
+const sendSmtpEmail = {
+	to: [{
+		email: 'testmail@example.com',
+		name: 'John Doe'
+	}],
+	templateId: 59,
+	params: {
+		name: 'John',
+		surname: 'Doe'
+	},
+	headers: {
+		'X-Mailin-custom': 'custom_header_1:custom_value_1|custom_header_2:custom_value_2'
+	}
+};
 
-    return NextResponse.json({ message: "Email sent successfully" }, { status: 200 });
-  } catch (error) {
-    console.error("Error sending email:", error);
-    return NextResponse.json({ message: "Internal server error" }, { status: 500 });
-  }
-}
+
+apiInstance.sendTransacEmail(sendSmtpEmail).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
