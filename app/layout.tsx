@@ -42,6 +42,7 @@ const RootLayout = ({ children, params }: RootLayoutProps) => {
           <ThemeProvider>
             <Navigation />
             <main>{children}</main>
+            <Analytics />
             <Footer  />
           </ThemeProvider>
         </LanguageProvider>
