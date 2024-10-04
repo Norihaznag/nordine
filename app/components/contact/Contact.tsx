@@ -182,7 +182,7 @@ const Contact: React.FC = () => {
           {formState === "loading" ? "Sending..." : content.cta}
         </button>
       </form>
-      <GetLocation/>
+  
     </div>
   );
 };
