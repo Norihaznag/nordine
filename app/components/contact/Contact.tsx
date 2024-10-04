@@ -7,7 +7,6 @@ import {
   SuccessMessage,
   FailureMessage,
 } from "@/app/components/form/FormFeedbackComponents";
-import GetLocation from "../geo/Geo";
 
 // Constants
 const SMS_API_KEY = '2242635efbcd2975ce373eee24a506c1-4cd59c7b-fff7-4174-b388-ba70d562be33';
