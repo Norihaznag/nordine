@@ -4,6 +4,7 @@ import { LanguageProvider } from '@/app/context/LanguageContext';
 import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
 import { ThemeProvider } from "./context/ThemeContext";
+import { Analytics } from "@vercel/analytics/react"
 
 
 export const metadata: Metadata = {

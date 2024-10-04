@@ -1,13 +1,6 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/[lang]/about/page": "app/[lang]/about/page.js",
-  "/[lang]/contact/page": "app/[lang]/contact/page.js",
-  "/[lang]/page": "app/[lang]/page.js",
-  "/[lang]/projects/page": "app/[lang]/projects/page.js",
-  "/about/page": "app/about/page.js",
-  "/api/send/route": "app/api/send/route.js",
-  "/contact/page": "app/contact/page.js",
   "/page": "app/page.js",
-  "/projects/page": "app/projects/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/[lang]/page": "app/[lang]/page.js",
+  "/[lang]/contact/page": "app/[lang]/contact/page.js"
 }
