@@ -68,7 +68,7 @@
         },
         {
           "name": "Association website",
-          "description": "A progressive web app for a food delivery service with offline support and smooth user experience.",
+          "description": "A static  web site for a smooth user experience.",
           "technologies": ["Next.js", "Tailwind CSS", "ContextApi"],
           "link": "https://lander-psi.vercel.app/" ,
            "image" : "porfavor"
@@ -161,8 +161,8 @@
           "image" : "summarized"
         },
         {
-          "name": "PWA de Restaurant",
-          "description": "Une application web progressive pour un service de livraison de nourriture avec prise en charge hors ligne et une expérience utilisateur fluide.",
+          "name": "Association Site Web",
+          "description": "Un site web statique pour une expérience utilisateur fluide.",
           "technologies": ["Next.js", "PWA", "Redux"],
           "link": "/projects/restaurant-pwa",
            "image" : "summarized"
@@ -255,8 +255,8 @@
            "image" : "summarized"
         },
         {
-          "name": "تطبيق PWA للمطاعم",
-          "description": "تطبيق ويب تقدمي لخدمة توصيل الطعام مع دعم العمل دون اتصال وتجربة مستخدم سلسة.",
+          "name": "موقع جمعية",
+          "description": "موقع ويب ثابت لتجربة مستخدم سلسة",
           "technologies": ["Next.js", "PWA", "Redux"],
           "link": "/projects/restaurant-pwa",
            "image" : "porfavor"
