@@ -120,8 +120,8 @@ const Page = ({ params }: PageProps) => {
         </div>
       </section>
 
-      <section className="flex flex-col md:flex-row  min-h-[40vh]  justify-center md:p-[15%] md:grid grid-cols-2 bg-[url('../public/backgrounds/contact.svg')] bg-cover bg-no-repeat ">
-        <div className="thumbnail  min-h-[50vh] bg-red-800 bg-[url('../public/backgrounds/contact.svg')] bg-cover bg-no-repeat md:hidden  "></div>
+      <section className="flex flex-col md:flex-row  min-h-[40vh]  justify-center md:p-[15%] md:grid grid-cols-2 bg-[url('../public/backgrounds/third.png')] bg-cover bg-no-repeat ">
+        <div className="thumbnail  min-h-[50vh]  bg-cover bg-no-repeat md:hidden  "></div>
         <Card>
 
           <h1 className="text-[1.9rem] font-semibold">{contact.title}</h1>

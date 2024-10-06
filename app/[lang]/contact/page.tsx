@@ -45,7 +45,7 @@ const ContactPage = ({ params }: PageProps) => {
       >
         <div className="top order-2">
           <div
-            className="thumbnail w-full min-h-[80vh] bg-[url('../public/backgrounds/third.png')] bg-cover bg-no-repeat"
+            className="thumbnail w-full md:min-h-[80vh] bg-[url('../public/images/third.png')] bg-cover bg-no-repeat"
             role="img"
             aria-label="Contact page header image"
           ></div>

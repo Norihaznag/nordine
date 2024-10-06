@@ -797,6 +797,15 @@ video {
 .bg-\[url\(\'\.\.\/public\/backgrounds\/third\.png\'\)\] {
   background-image: url(/_next/static/media/third.19fe6727.png);
 }
+.bg-\[url\(\'\.\.\/public\/images\/contact1\.jpg\'\)\] {
+  background-image: url(/_next/static/media/contact1.6e0c9a3d.jpg);
+}
+.bg-\[url\(\'\.\.\/public\/images\/contact2\.jpg\'\)\] {
+  background-image: url(/_next/static/media/contact2.b16e4e52.jpg);
+}
+.bg-\[url\(\'\.\.\/public\/images\/third\.png\'\)\] {
+  background-image: url(/_next/static/media/third.c4366f6d.png);
+}
 .bg-cover {
   background-size: cover;
 }
@@ -970,13 +979,13 @@ body{
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
-.hover\:text-gray-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
-}
 .hover\:text-blue-600:hover {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+.hover\:text-gray-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 .hover\:underline:hover {
   text-decoration-line: underline;
@@ -1022,6 +1031,10 @@ body{
 
   .md\:min-h-\[70vh\] {
     min-height: 70vh;
+  }
+
+  .md\:min-h-\[80vh\] {
+    min-height: 80vh;
   }
 
   .md\:grid-cols-2 {
