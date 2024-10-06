@@ -38,12 +38,12 @@ const ProjectsPage = ({ params }: PageProps) => {
             {projects.projectsList.map((project, index: number) => (
               <li key={index} className="mb-8  md:grid grid-cols-2 gap-3 ">
                 <div className={`thumbnail items-center w-full md:min-h-[50vh] bg-[#252525] ${lang === "ar" ? "text-right order-2 " : ""}`} role="img" aria-label={`${project.name} project thumbnail`}>
-                  <Image src={`/images/${project.image}.png`} className="object-cover w-full h-full" width={300} height={200} alt=""/>
+                  <Image src={`/images/project.png`} className="object-fill w-full h-full" width={300} height={200} alt=""/>
                 </div>
                 <div className="content p-[5%]">
                 <h3>
                   <Link
-                    className={`text-[1.5rem] mb-1 flex font-semibold ${lang === "ar" ? "text-right justify-end" : ""}`}
+                    className={`text-[1.5rem] mb-1 hover:text-blue-600 hover:underline flex font-semibold ${lang === "ar" ? "text-right justify-end" : ""}`}
                     href={project.link}
                   >
                     {project.name} 
@@ -57,7 +57,7 @@ const ProjectsPage = ({ params }: PageProps) => {
                     </li>
                   ))}
                 </ul>
-                <button className="p-2 mt-3  hover:border-b-2   ">See Details</button>
+                
                 </div>
                 
               </li>

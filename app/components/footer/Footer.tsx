@@ -8,7 +8,6 @@ import { useParams } from "next/navigation";
 
 
 
-
 const Footer = () => {
   const { lang = "en" } = useParams();
   const { contact, footer } = content[lang as keyof typeof content];

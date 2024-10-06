@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { LanguageProvider } from '@/app/context/LanguageContext';
 import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
 import { ThemeProvider } from "./context/ThemeContext";
@@ -38,14 +37,14 @@ const RootLayout = ({ children, params }: RootLayoutProps) => {
   return (
     <html lang={lang}>
       <body>
-        <LanguageProvider>
+
           <ThemeProvider>
             <Navigation />
             <main>{children}</main>
             <Analytics />
             <Footer  />
           </ThemeProvider>
-        </LanguageProvider>
+       
       </body>
     </html>
   );

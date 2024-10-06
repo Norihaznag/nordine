@@ -9,9 +9,3 @@
 body{
   background: var(--light);
 }
-
-.main-bg{
-  background-image: url('../public/backgrounds/main.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}

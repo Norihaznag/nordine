@@ -55,8 +55,8 @@ const Page = ({ params }: PageProps) => {
 
   return (
     <div className={`min-h-screen ${lang === "ar" ? "text-right" : ""} `}>
-      <section className="md:bg-[url('../public/backgrounds/main.png')] bg-cover bg-no-repeat flex md:grid grid-cols-2 flex-col gap-4  min-h-[40vh]   justify-center md:p-[15%]">
-        <div className="thumbnail w-full min-h-[40vh] bg-[url('../public/backgrounds/main.png')] bg-cover bg-no-repeat md:hidden"></div>
+      <section className="md:bg-[url('../public/backgrounds/main.svg')] bg-cover bg-no-repeat flex md:grid grid-cols-2 flex-col gap-4  min-h-[40vh]   justify-center md:p-[15%]">
+        <div className="thumbnail w-full min-h-[40vh] bg-[url('../public/backgrounds/main.svg')] bg-cover bg-no-repeat md:hidden"></div>
 
         <Card className="order-2">
           <h1 className="text-[1.5rem] font-semibold ">{home.title}</h1>
@@ -67,11 +67,11 @@ const Page = ({ params }: PageProps) => {
         </Card>
       </section>
 
-      <section className="flex border-b-2 flex-wrap justify-center md:p-[15%]">
-        <div className="thumbnail w-full min-h-[40vh]  md:hidden  bg-[url('../public/backgrounds/second.png')] bg-cover bg-no-repeat  "></div>
+      <section className="flex border-b-2 flex-wrap justify-center md:p-[15%] md:bg-[url('../public/backgrounds/skills.svg')] bg-cover bg-no-repeat">
+        <div className="thumbnail w-full min-h-[40vh]  md:hidden  bg-[url('../public/backgrounds/skills.svg')] bg-cover bg-no-repeat  "></div>
         <div className="bootom">
         
-          <Card className="bg-transparent">
+          <Card className="">
           <h1 className="text-[1.9rem]  font-semibold text-nowrap">
             {skills.title}
           </h1>
@@ -92,8 +92,8 @@ const Page = ({ params }: PageProps) => {
 
       </section>
 
-      <section className="flex border-b-2  flex-col gap-4  min-h-[40vh]  md:p-[10%] md:flex-row ">
-        <div className="thumbnail w-full min-h-[40vh] bg-[url('../public/backgrounds/second.png')] bg-cover bg-no-repeat"></div>
+      <section className="flex border-b-2  flex-col gap-4  min-h-[40vh]  md:p-[10%] md:flex-row  ">
+        <div className="thumbnail w-full min-h-[40vh] bg-[url('../public/backgrounds/projects.svg')] bg-cover bg-no-repeat"></div>
         <div className="content p-5 flex flex-col gap-6">
           <h1 className="text-[1.9rem] font-semibold">{projects.title}</h1>
           <p>{projects.description}</p>
@@ -120,8 +120,8 @@ const Page = ({ params }: PageProps) => {
         </div>
       </section>
 
-      <section className="flex flex-col md:flex-row  min-h-[40vh]  justify-center md:p-[15%] md:grid grid-cols-2 bg-[url('../public/backgrounds/third.png')] bg-cover bg-no-repeat ">
-        <div className="thumbnail  min-h-[50vh] bg-red-800 bg-[url('../public/backgrounds/third.png')] bg-cover bg-no-repeat md:hidden  "></div>
+      <section className="flex flex-col md:flex-row  min-h-[40vh]  justify-center md:p-[15%] md:grid grid-cols-2 bg-[url('../public/backgrounds/contact.svg')] bg-cover bg-no-repeat ">
+        <div className="thumbnail  min-h-[50vh] bg-red-800 bg-[url('../public/backgrounds/contact.svg')] bg-cover bg-no-repeat md:hidden  "></div>
         <Card>
 
           <h1 className="text-[1.9rem] font-semibold">{contact.title}</h1>
