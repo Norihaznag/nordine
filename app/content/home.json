@@ -67,6 +67,13 @@
            "image" : "summarized"
         },
         {
+          "name": "E-commerce WebSite Next js and admin panel",
+          "description": "A fully functional e-commerce site with server-side rendering (SSR) using Next.js. Integrated with admin for stock management.",
+          "technologies": ["Next.js", "Tailwind CSS", "TypeScript", "Redux"],
+          "link": "https://ecommerce-rbu7.vercel.app/" ,
+           "image" : "kilohi"
+        },
+        {
           "name": "Association website",
           "description": "A static  web site for a smooth user experience.",
           "technologies": ["Next.js", "Tailwind CSS", "ContextApi"],
@@ -161,6 +168,13 @@
           "image" : "summarized"
         },
         {
+          "name": "Site Web E-commerce Next.js et panneau d'administration",
+          "description": "Un site e-commerce entièrement fonctionnel avec rendu côté serveur (SSR) utilisant Next.js. Intégré avec un panneau d'administration pour la gestion des stocks.",
+          "technologies": ["Next.js", "Tailwind CSS", "TypeScript", "Redux"],
+          "link": "https://ecommerce-rbu7.vercel.app/",
+          "image": "kilohi"
+      },      
+        {
           "name": "Association Site Web",
           "description": "Un site web statique pour une expérience utilisateur fluide.",
           "technologies": ["Next.js", "PWA", "Redux"],
@@ -254,6 +268,14 @@
           "link": "/projects/blog" ,
            "image" : "summarized"
         },
+        {
+          "name": "موقع إلكتروني للتجارة الإلكترونية Next.js ولوحة الإدارة",
+          "description": "موقع للتجارة الإلكترونية متكامل يعمل بالكامل باستخدام Next.js ويعتمد على العرض من جانب الخادم (SSR). متكامل مع لوحة إدارة لإدارة المخزون.",
+          "technologies": ["Next.js", "Tailwind CSS", "TypeScript", "Redux"],
+          "link": "https://ecommerce-rbu7.vercel.app/",
+          "image": "kilohi"
+      }
+,      
         {
           "name": "موقع جمعية",
           "description": "موقع ويب ثابت لتجربة مستخدم سلسة",
